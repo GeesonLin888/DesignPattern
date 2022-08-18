@@ -2,6 +2,10 @@ package com.bigbaby.myapplication
 
 import com.bigbaby.myapplication.bridgemode.TestBridgeMode
 import com.bigbaby.myapplication.proxymode.TestProxy
+import com.bigbaby.myapplication.responsibilitychainmode.InterceptorChain
+import com.bigbaby.myapplication.responsibilitychainmode.ResponsibilityChainMode
+import com.bigbaby.myapplication.sharemode.ShareMode
+import com.bigbaby.myapplication.strategy.StrategyMode
 import org.junit.Test
 
 import org.junit.Assert.*
@@ -25,5 +29,20 @@ class ExampleUnitTest {
     @Test
     fun test_bridge_mode() {
         TestBridgeMode.testBridge();
+    }
+
+    @Test
+    fun test_share_mode() {
+        ShareMode.test();
+    }
+
+    @Test
+    fun test_Strategy_mode() {
+        StrategyMode.testStrategy()
+    }
+
+    @Test
+    fun test_Responsibility_Chain_mode() {
+        ResponsibilityChainMode.testResponsibilityChainMode()
     }
 }
